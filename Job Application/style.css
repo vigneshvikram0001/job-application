@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(/rezort.jpg); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.head{
+    max-width: 900px;
+    background: linear-gradient(160deg, rgba(255, 255, 255, 0.559), rgba(39, 181, 197, 0.503), rgba(0, 136, 255, 0.492));
+    box-shadow: 1px 1px 25px 1px black;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.head h1{
+    width: 100%;
+    padding: 10px;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-align: center;
+    background-color: rgb(0, 166, 255);
+}
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+.content{
+    width: 100vw;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px ;
+}
+.content .form_text, .form_gender{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: bold;
+}
+
+label{
+    font-size: 15px;
+    font-family: sans-serif;
+    margin: 7px 0px;
+}
+.form_text input, textarea, select{
+    min-height: 40px;
+    margin: 10px 3px;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: 2px solid  rgb(1, 173, 1);
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.662);
+}
+.form_text .upload{
+    background-color: transparent;
+    border: none;
+}
+.form_textarea label{
+    font-size: 15px;
+    font-family: sans-serif;
+    margin: 7px 0px;
+}
+.form_text textarea{
+    padding-top: 10px;
+}
+.form_gender{
+    display: inline-block;
+}
+.form_gender .gender_input{
+    margin-left: 80px;
+}
+.form_gender input{
+    margin: 10px 0px;
+}
+
+
+
+/* button */
+.button_container{
+    display: grid;
+    place-items: center;
+}
+.button_container .btn{
+    padding: 10px 20px;
+    margin: 10px auto 20px;
+    background-color: rgb(34, 255, 0);
+    border-radius: 8px;
+    outline: none;
+    font-weight: bold;
+    border: 1px solid transparent;
+    position: relative;
+    z-index: 1;
+}
+.layer{
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .15s ease-in;
+    z-index: -1;
+    background-color: rgb(238, 8, 47);
+    border-radius: 7px;
+}
+.btn:hover .layer{
+    width: 100%;
+}
+.btn:hover{
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(238, 8, 47);
+}
+
+/* valid or not */
+
+.string:invalid{
+    border-color: red;
+    animation: shake .2s 3;
+}
+.string:valid{
+    border: 2px solid rgb(1, 173, 1);
+}
+
+@keyframes shake{
+    0%{transform: translate(4px);}
+    50%{transform: translate(-4px);}
+    100%{transform: translate(4px);}
+}
+

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fill the Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="head">
+        <h1>Job Application</h1>
+
+    <div class="container">
+            <form action="" class="content">
+            <div class="form_text">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" placeholder="Enter your first name" class="string" pattern="[a-z, A-Z]*">
+            </div>
+            <div class="form_text">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" placeholder="Enter your last name" class="string" pattern="[a-z, A-Z]*">
+            </div>
+            <div class="form_text">
+                <label for="email">Email-id</label>
+                <input type="text" id="email" placeholder="Enter your email id">
+            </div>
+            
+            <div class="form_text">
+                <label for="pass">Create Password</label>
+                <input type="password" id="email" placeholder="Enter your new password">
+            </div>
+            <div class="form_text">
+                <label for="cpass">Conform Password</label>
+                <input type="password" id="email" placeholder="Repeate your password">
+            </div>
+             <div class="form_gender">
+                <label for="gender" name="gender">Gender</label>
+                <div class="gender_input">
+                <input type="radio" id="gender" name="gender" >Male<br>
+                <input type="radio" id="gender" name="gender" >Female
+            </div>
+            </div>
+            <div class="form_text">
+                <label for="job">Job Roll</label>
+                <select name="" id="">
+                    <option value="">--Select--</option>
+                    <option value="">Web Development</option>
+                    <option value="">Ul/UX Designer</option>
+                    <option value="">Java Developer</option>
+                    <option value="">Mobile App Developer</option>
+                    <option value="">Teasing Engineer</option>
+                </select>
+             </div>
+            <div class="form_text">
+                <label for="upload">Upload CV</label>
+                <input type="file" class="upload">
+             </div>
+            <div class="form_text">
+                <label for="date">Date</label>
+                <input value="2022-11-25" id="date" type="date">
+             </div>
+             <div class="form_text">
+                <label for="textarea">Commands</label>
+                <textarea name="" id="textarea" cols="30" rows="2.5" placeholder="Enter your commands"></textarea>
+             </div>
+        </form>
+
+    </div>
+    <div class="button_container">
+        <button class="btn"><span class="layer"></span>Apply Now</button>
+       </div>
+    </div>
+</body>
+</html>
